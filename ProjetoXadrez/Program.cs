@@ -1,17 +1,18 @@
 ﻿using ProjetoXadrez.Tabuleiro;
 using System;
 
-namespace ProjetoXadrez
+
+namespace ProjetoXadrez.Tabuleiro
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Posicao P;
+            Tabuleiro tab = new Tabuleiro(8, 8);
 
-            P = new Posicao(3, 4);
+            Tela.imprimirTabuleiro(tab);
 
-            Console.WriteLine("Posiçao:" + P);
+            Console.ReadLine();
         }
     }
 }
