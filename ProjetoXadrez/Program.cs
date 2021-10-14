@@ -1,8 +1,8 @@
-﻿using ProjetoXadrez.Tabuleiro;
+﻿using Tabuleiro;
 using System;
+using Tabuleiro.xadrez;
 
-
-namespace ProjetoXadrez.Tabuleiro
+namespace Tabuleiro
 {
     class Program
     {
@@ -10,9 +10,11 @@ namespace ProjetoXadrez.Tabuleiro
         {
             Tabuleiro tab = new Tabuleiro(8, 8);
 
-            Tela.imprimirTabuleiro(tab);
+            tab.colocarPeca(new Torre(tab, Cor.Preta), new Posicao(0, 0));
+            tab.colocarPeca(new Torre(tab, Cor.Preta), new Posicao(1, 3));
+            tab.colocarPeca(new Rei(tab, Cor.Preta), new Posicao(2, 4));
 
-            Console.ReadLine();
+            Tela.imprimirTabuleiro(tab);
         }
     }
 }

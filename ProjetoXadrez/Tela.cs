@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ProjetoXadrez.Tabuleiro
+namespace Tabuleiro
 {
     class Tela
     {
