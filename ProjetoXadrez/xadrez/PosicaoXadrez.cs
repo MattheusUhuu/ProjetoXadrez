@@ -16,6 +16,7 @@ namespace xadrez
         }
 
         //Retorna a converção de um tabuleiro para matriz, para a matriz saber qual a posicao.
+        //'a' por padrao do c# tem o valor 1
         public Posicao toPosicao()
         {
             return new Posicao(8 - linha, coluna - 'a');
